@@ -5,10 +5,12 @@ def selection_sort(arr):
         for j in range(i + 1, n):  # Find the actual smallest element
             if arr[j] < arr[min_index]:
                 min_index = j  # Update index of the minimum element
-        #         Swap elements using temp variables
-        temp = arr[i]
-        arr[i] = arr[min_index]
-        arr[min_index] = temp
+        arr[i], arr[min_index] = arr[min_index], arr[i]  # Swap
+        # Swap elements using temp variables
+        # temp = arr[i]
+        # arr[i] = arr[min_index]
+        # arr[min_index] = temp
+    return arr
 
 
 arr = [7, 3, 9, 2, 5]
