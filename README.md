@@ -24,7 +24,7 @@ arr[i] = arr[min_index]
 arr[min_index] = temp
 ```
 
-### Selection Sorting
+### Brute force Selection Sorting
 
 Selection Sort is a straightforward brute-force algorithm that sorts an array by repeatedly selecting the smallest (or
 largest) element and placing it in its correct position. It is an inefficient sorting technique with O(n²) time
@@ -54,3 +54,28 @@ Why?
 Space Complexity
 
 	•	O(1) (Only a temp variable is used for swapping, making it an in-place algorithm).
+
+## Brute force Bubble sort
+- we could have sort the array from right to left, and bubbled up the minimum to the left by repeated exchanges
+- Bubble Sort is a simple brute-force sorting algorithm that repeatedly swaps adjacent elements if they are in the wrong order. It continues passing through the list until it is fully sorted.
+
+
+1. How Bubble Sort Works
+	1.	Compare adjacent elements in the list.
+	2.	Swap them if they are in the wrong order.
+	3.	Repeat the process for every element until the list is sorted.
+	4.	Each pass moves the largest unsorted element to its correct position at the end.
+
+Complexity Analysis
+
+	•	Best-case:  O(n)  (already sorted with no swaps).
+	•	Worst-case:  O(n^2)  (reverse sorted, maximum swaps needed).
+	•	Average-case:  O(n^2) .
+
+Space Complexity
+
+	•	O(1) (Only uses a temporary variable for swapping, making it an in-place sorting algorithm).
+
+
+# Summary of Sorting Algorithms
+![img.png](img.png)
