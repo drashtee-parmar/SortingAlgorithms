@@ -24,6 +24,17 @@ arr[i] = arr[min_index]
 arr[min_index] = temp
 ```
 
+
+Design Strategy #1: Brute Force Comparison
+    - Selection Sort algorithm
+    - Bubble sort algorithm
+Design Strategy #2: Decrease and Conquer (lazy manager approach)
+    - Decrease the given problem of size n to size n-1
+        - n
+        - upfront work to nibble away one element from the given input. n --> n-1
+        - work at the end to extend the (n-1)st solution n-1 --> n = Insertion sort algorithm
+
+
 ### Brute force Selection Sorting
 
 Selection Sort is a straightforward brute-force algorithm that sorts an array by repeatedly selecting the smallest (or
@@ -75,7 +86,16 @@ Complexity Analysis
 Space Complexity
 
 	•	O(1) (Only uses a temporary variable for swapping, making it an in-place sorting algorithm).
+### Decrease and Conquer (lazy manager approach)
+    - Decrease the problem of size n to size n - 1
+    - Assume you have solved the problem of size n-1
+    - Solve the problem of size n using the solution to the problem of size n-1
+    - Recursive (Top down approach) and iterative (Bottom up approach)
 
+
+## Note
+- in selection and bubble sort we make use of for 
+- in insertion sort we make use of while looping
 
 # Summary of Sorting Algorithms
 ![img.png](img.png)
