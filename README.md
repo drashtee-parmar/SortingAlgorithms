@@ -86,11 +86,22 @@ Complexity Analysis
 Space Complexity
 
 	•	O(1) (Only uses a temporary variable for swapping, making it an in-place sorting algorithm).
-### Decrease and Conquer (lazy manager approach)
+### Decrease and Conquer (lazy manager approach) : Insertion sort
     - Decrease the problem of size n to size n - 1
     - Assume you have solved the problem of size n-1
     - Solve the problem of size n using the solution to the problem of size n-1
     - Recursive (Top down approach) and iterative (Bottom up approach)
+
+### Divide and Conquer (lazy manager approach dividing problem in 2 half breaking from middle point)
+- Divide the problem into multiple smaller instances(most often 2 -> n = n/2 left half, n/2 right half), generally of the same size.
+- Solve the smaller instances(typically using recursion)
+- Combine the solutions to the smaller instances to get the solution to the originla problem.
+- 
+
+
+
+
+
 
 
 ## Note
