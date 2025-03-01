@@ -91,13 +91,32 @@ Space Complexity
     - Assume you have solved the problem of size n-1
     - Solve the problem of size n using the solution to the problem of size n-1
     - Recursive (Top down approach) and iterative (Bottom up approach)
+    - linear chain top to bottom
 
 ### Divide and Conquer (lazy manager approach dividing problem in 2 half breaking from middle point)
 - Divide the problem into multiple smaller instances(most often 2 -> n = n/2 left half, n/2 right half), generally of the same size.
 - Solve the smaller instances(typically using recursion)
 - Combine the solutions to the smaller instances to get the solution to the originla problem.
-- 
+- it a tree based problem from top to bottom (recursive code)
+- An artibitary worker in the heirche is going to be asked to sort from index start and end at index end 
 
+## how to solve the problem
+### using leaf nodes 
+- start = 2
+- end = 5
+- `end - start + 1` = 5 - 2 + 1
+- end = start = 1 node should left
+
+### using arbitory worker approach
+- split in 2 nodes 
+- sub array of original array
+- sorting on left section = array, start, mid
+- sorting on right section = array, mid + 1, end
+- merge two sorted halves into one
+- i = starting index
+- j = mid + 1
+- aux_array = [] # empty array of size end - start + 1
+- 
 
 
 
